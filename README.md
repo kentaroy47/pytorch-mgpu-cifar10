@@ -35,4 +35,12 @@ python train_cifar10.py
 # parallel training with GPUs 0-3.
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 python train_cifar10.py
+
+# デフォルトの設定はResnet18となっています。
+
+# Res101で学習する場合
+python train_cifar10.py --net res101
+
+# Res50で学習する場合
+python train_cifar10.py --net res50
 ```
